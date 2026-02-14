@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Universo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valentín</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<canvas id="three-canvas"></canvas>
+  <div id="overlay">
+    <div class="panel">
+      <h2>Mi Universo</h2>
+      <p>Presiona para activar la cámara y los gestos ✋</p>
+      <button id="startBtn">Iniciar</button>
+      <p id="status"></p>
+    </div>
+  </div>
 
-<script type="module" src="main.js"></script>
+  <canvas id="three-canvas"></canvas>
 
+  <script type="module" src="main.js"></script>
 </body>
 </html>

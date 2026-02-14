@@ -1,9 +1,29 @@
-body {
-  margin: 0;
-  overflow: hidden;
-  background: black;
+body { margin: 0; overflow: hidden; background: black; font-family: system-ui, Arial; }
+canvas { display: block; }
+
+#overlay{
+  position: fixed; inset: 0;
+  display: grid; place-items: center;
+  background: rgba(0,0,0,0.75);
+  z-index: 10;
 }
 
-canvas {
-  display: block;
+.panel{
+  color: white;
+  text-align: center;
+  padding: 20px 24px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  width: min(420px, 90vw);
 }
+
+button{
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#status{ opacity: 0.9; margin-top: 10px; font-size: 14px; }
